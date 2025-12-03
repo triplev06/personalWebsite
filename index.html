@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vikranth Vegesina - Computer Science student at The Ohio State University specializing in AI/ML, web development, and innovative tech solutions.">
+    <title>Vikranth Vegesina | CS Student & Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">VV</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="gradient-bg" class="hero-background"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Vikranth Vegesina</span>
+                </h1>
+                <p class="hero-subtitle"><span class="typing-text">Computer Science Student | AI/ML Enthusiast | Hackathon Winner</span></p>
+                <p class="hero-description">
+                    Building innovative solutions at the intersection of AI, web development, and real-world impact.
+                    Currently studying at The Ohio State University.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/vik-vegesina" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="mailto:vegesinav@gmail.com" class="social-link" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                    <a href="tel:+16144363462" class="social-link" aria-label="Phone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Science and Engineering student at <strong>The Ohio State University</strong>,
+                        passionate about leveraging technology to solve real-world problems. My expertise spans
+                        <strong>AI/ML development</strong>, <strong>full-stack web development</strong>, and
+                        <strong>computer vision</strong>.
+                    </p>
+                    <p>
+                        With multiple hackathon victories under my belt, including <strong>1st place at Intel HackOHI/O</strong>
+                        and <strong>1st place at GiveBackHack</strong>, I thrive in fast-paced, collaborative environments
+                        where innovation meets impact. I've built everything from AI-powered health diaries to power grid
+                        simulators to multi-modal chatbots.
+                    </p>
+                    <p>
+                        When I'm not coding, I'm exploring new AI frameworks, contributing to open-source projects,
+                        or mentoring fellow students in tech competitions.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Hackathon Awards</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Coding</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug 2022 - Present</div>
+                        <h3>Web Designer</h3>
+                        <h4>Sweeja Jewelry LLC</h4>
+                        <p>Columbus, Ohio</p>
+                        <ul>
+                            <li>Built the e-commerce website with Java, TypeScript, and CSS, boosting accessibility and visibility by 70%</li>
+                            <li>Developed a structured inventory database to streamline product management</li>
+                            <li>Coordinated with business owners to ensure consistent design and branding across platforms</li>
+                            <li>Resulted in a 30% increase in customer inquiries and contributed to measurable revenue growth</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Apr 2022 - Jul 2022</div>
+                        <h3>Intern</h3>
+                        <h4>Accenture</h4>
+                        <p>Columbus, Ohio</p>
+                        <ul>
+                            <li>Built an interactive Java virtual pet app in VS Code with 560 lines of code and 12 testers</li>
+                            <li>Applied iterative development and collaborated with mentors to refine project scope</li>
+                            <li>Gained experience in object-oriented design and real-world software workflows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- TheoHealth -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🏥</div>
+                        <div class="project-badges">
+                            <span class="badge badge-winner">1st Place</span>
+                            <span class="badge badge-winner">3rd Place</span>
+                        </div>
+                    </div>
+                    <h3>TheoHealth</h3>
+                    <p class="project-description">
+                        AI-powered conversational health diary for seniors with chronic conditions. Transforms natural
+                        language into clinical data with 85% accuracy using Gemini AI and Firebase.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Gemini AI</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">NLP</span>
+                    </div>
+                    <div class="project-highlights">
+                        <p><strong>Impact:</strong> Led 10-person AI team | 1st at GiveBackHack | 3rd at OSU Appathon</p>
+                        <p><strong>Research:</strong> 40+ user surveys | physician connections for pilot testing</p>
+                    </div>
+                </div>
+
+                <!-- GothamAI -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🦇</div>
+                    </div>
+                    <h3>GothamAI</h3>
+                    <p class="project-description">
+                        Multi-modal AI assistant featuring three Batman character personalities (Batman, Alfred, Joker)
+                        with unique voices, vision analysis, biometric authentication, and interactive games.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Groq API</span>
+                        <span class="tech-tag">Llama 4</span>
+                        <span class="tech-tag">Supabase</span>
+                    </div>
+                    <div class="project-highlights">
+                        <p><strong>Features:</strong> Character-specific TTS | Face + voice auth | Vision AI | 5 mini-games</p>
+                        <p><strong>Tech:</strong> Function calling | RAG | Web Speech API | Real-time streaming</p>
+                    </div>
+                </div>
+
+                <!-- BLACKOUT -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">⚡</div>
+                        <div class="project-badges">
+                            <span class="badge badge-winner">2nd Place</span>
+                        </div>
+                    </div>
+                    <h3>BLACKOUT - AEP Power Grid Simulator</h3>
+                    <p class="project-description">
+                        Intelligent platform for transmission planners with real-time predictive insights using IEEE-738
+                        thermal modeling. Features AI chatbot powered by Claude + RAG for natural language queries.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Python/Flask</span>
+                        <span class="tech-tag">Claude AI</span>
+                        <span class="tech-tag">Pinecone</span>
+                        <span class="tech-tag">RAG</span>
+                    </div>
+                    <div class="project-highlights">
+                        <p><strong>Impact:</strong> 2nd place at HackOHI/O 2025 (800+ participants, 150+ teams)</p>
+                        <p><strong>Analysis:</strong> Simulates 77 transmission lines | 24-hour load scenarios</p>
+                    </div>
+                </div>
+
+                <!-- AutoPatt -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🔬</div>
+                        <div class="project-badges">
+                            <span class="badge badge-winner">1st Place</span>
+                            <span class="badge badge-winner">2nd Place</span>
+                        </div>
+                    </div>
+                    <h3>AutoPatt</h3>
+                    <p class="project-description">
+                        Automated high-precision photolithography system for semiconductor manufacturing with motorized
+                        alignment, real-time feedback, and ~99% accuracy using OpenCV and Arduino.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">C</span>
+                    </div>
+                    <div class="project-highlights">
+                        <p><strong>Awards:</strong> 1st at Intel HackOHI/O 2024 | 2nd at OSU Tech Showcase 2025</p>
+                        <p><strong>Innovation:</strong> Automated detection/rotation for microchip fabrication</p>
+                    </div>
+                </div>
+
+                <!-- Dossier -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📚</div>
+                    </div>
+                    <h3>Dossier</h3>
+                    <p class="project-description">
+                        AI-powered research search engine that simplifies academic queries by over 50% using OpenAI GPT-4o
+                        mini and Semantic Scholar APIs. Features Google Authentication and Supabase backend.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">OpenAI</span>
+                    </div>
+                    <div class="project-highlights">
+                        <p><strong>Event:</strong> HackAI25 at OSU</p>
+                        <p><strong>Impact:</strong> Streamlines academic research with AI-driven insights</p>
+                    </div>
+                </div>
+
+                <!-- Wheelchair Modification -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">♿</div>
+                    </div>
+                    <h3>Wheelchair Ratchet Lever System</h3>
+                    <p class="project-description">
+                        Designed an affordable wheelchair modification featuring a ratchet-based lever system for manual
+                        propulsion. Functions as brake and provides bidirectional control for improved mobility.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Mechanical Design</span>
+                        <span class="tech-tag">Prototyping</span>
+                        <span class="tech-tag">User Research</span>
+                    </div>
+                    <div class="project-highlights">
+                        <p><strong>Course:</strong> Engineering 1182 at OSU</p>
+                        <p><strong>Goal:</strong> Cost-effective alternative to motorized wheelchairs</p>
+                    </div>
+                </div>
+
+                <!-- Palmer Penguins ML -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🐧</div>
+                    </div>
+                    <h3>Palmer Penguins ML Classifier</h3>
+                    <p class="project-description">
+                        Machine learning model predicting penguin species from physical measurements using Random Forest
+                        regression, Softmax activation, and L2 regularization. Presented at BDAA Research Gala.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">pandas</span>
+                        <span class="tech-tag">scikit-learn</span>
+                        <span class="tech-tag">ML</span>
+                    </div>
+                    <div class="project-highlights">
+                        <p><strong>Application:</strong> Ecological research | population tracking | environmental monitoring</p>
+                        <p><strong>Optimization:</strong> Quasi-Newton method for weight tuning</p>
+                    </div>
+                </div>
+
+                <!-- Battleship with AI -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🎮</div>
+                    </div>
+                    <h3>Battleship with Generative AI</h3>
+                    <p class="project-description">
+                        Interactive Battleship game built in MATLAB featuring generative AI integration using Meta's Ollama
+                        API. Includes custom UI elements, music, and multi-screen navigation.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">MATLAB</span>
+                        <span class="tech-tag">Ollama API</span>
+                        <span class="tech-tag">UI Design</span>
+                    </div>
+                    <div class="project-highlights">
+                        <p><strong>Innovation:</strong> First generative AI implementation in MATLAB for class</p>
+                        <p><strong>Course:</strong> Engineering 1181 at OSU</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MATLAB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">React Native</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">scikit-learn</span>
+                        <span class="skill-tag">OpenCV</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & Developer Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Claude Sonnet</span>
+                        <span class="skill-tag">ChatGPT</span>
+                        <span class="skill-tag">Gemini AI</span>
+                        <span class="skill-tag">Ollama</span>
+                        <span class="skill-tag">Groq API</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Supabase</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Copilot</span>
+                        <span class="skill-tag">Pinecone</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Expertise</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Agentic AI</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">RAG Systems</span>
+                        <span class="skill-tag">Web Development</span>
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Awards</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>1st Place - Intel HackOHI/O 2024</h3>
+                    <p>AutoPatt semiconductor tracking system</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>1st Place - GiveBackHack 24-Hour Hack</h3>
+                    <p>TheoHealth AI health diary</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🥈</div>
+                    <h3>2nd Place - HackOHI/O 2025 AEP Challenge</h3>
+                    <p>BLACKOUT power grid simulator</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🥉</div>
+                    <h3>3rd Place - OSU Medicine Appathon</h3>
+                    <p>TheoHealth conversational AI</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🥈</div>
+                    <h3>2nd Place - OSU Tech Showcase 2025</h3>
+                    <p>AutoPatt photolithography system</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>1st Place - Accenture Case Competition</h3>
+                    <p>AdviseBot AI-driven virtual advisor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of
+                        your vision. Whether you're looking for a collaborator on a hackathon project, need help
+                        with AI/ML development, or just want to connect, feel free to reach out!
+                    </p>
+                </div>
+                <div class="contact-methods">
+                    <a href="mailto:vegesinav@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <h3>Email</h3>
+                        <p>vegesinav@gmail.com</p>
+                    </a>
+                    <a href="tel:+16144363462" class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>(614) 436-3462</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vik-vegesina" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/vik-vegesina</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Vikranth Vegesina. Built with passion and code.</p>
+            <p class="footer-subtitle">Computer Science Student at The Ohio State University</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
