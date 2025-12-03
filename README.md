@@ -327,7 +327,7 @@ Edit CSS variables in `styles.css`:
 
 ## License
 
-Copyright © 2024 Vikranth Vegesina. All rights reserved.
+Copyright © 2025 Vikranth Vegesina. All rights reserved.
 
 ## Contact
 

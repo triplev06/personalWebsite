@@ -5,7 +5,7 @@ All notable changes to the Vikranth Vegesina Personal Portfolio Website will be 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2024-12-02
+## [1.0.0] - 2025-12-02
 
 ### Added - Initial Release
 
@@ -336,4 +336,4 @@ The website is fully responsive and works across all modern browsers and devices
 ---
 
 **Maintained by Vikranth Vegesina**
-**Last Updated: December 2, 2024**
+**Last Updated: December 2, 2025**
